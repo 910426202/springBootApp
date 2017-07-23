@@ -1,0 +1,24 @@
+spring:
+  #指定那个子配置文件
+  profiles:
+    active: dev
+  datasource:
+    driver-class-name: com.mysql.jdbc.driver
+    url: jdbc:mysql://localhost:3306/test
+    uername: root
+    password:
+  jpc:
+    hibernate:
+#    新建表
+      ddl-auto: create
+    show-sql: true
+
+
+#数据库配置
+#spring.datasource.url=jdbc:mysql://localhost:3306/test
+#spring.datasource.username=root
+#spring.datasource.password=tianci28
+#spring.datasource.driver-class-name=com.mysql.jdbc.Driver
+#服务器配置
+#server.port=8080
+#server.context.path=/person
